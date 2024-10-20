@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      height: 100vh;
+      margin: 0;
+    }
+
+
+    .sidebar {
+      width: 200px;
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #0056b3;
+    }
+
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+  
+    a.logout-button {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #dc3545;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    a.logout-button:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="/users">Users</a>
+    <a href="/products">Products</a>
+    <a href="/logout" class="logout-button">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <h1>Welcome, <%= username %>!</h1>
+    <p>Welcome to da channix dashboard. sidebar issa hereeee</p>
+  </div>
+</body>
+</html>
